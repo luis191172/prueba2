@@ -15,7 +15,43 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         
-        //MOdificado 2  
+        //: Mini Reto Luis Gomez
+        
+        
+        
+        for numero in 0...100{ //Bucle de 100 veces
+            
+            switch numero{  //Evaluamos la condicion en el rango 30 a 40
+            case 30...40:
+                print("\(numero) Viva Swift!!")
+            default:
+                
+                
+                let resto1 =  numero % 2
+                let resto2 = numero % 5
+                
+                if resto1 == 0{  //Si es cero, es que es par
+                    
+                    print("\(numero) Es par")
+                    
+                }
+                else if resto2 == 0{ //Si es cero es divisible por 5
+                    
+                    print("\(numero) Bingo")
+                }
+                    
+                    
+                else {   //cuando no es par es impar
+                    print("\(numero) Es Impar")
+                    
+                    
+                }
+                
+                
+            }
+        }
+       //Hasta aqui llega el codigo del MiniReto
+        
     }
 
     override func didReceiveMemoryWarning() {
